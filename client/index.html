@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LAST LIGHT — Deep Space Survival</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="splash">
+ <div id="sload">
+  <div id="sbarw"><div id="sbar"></div></div>
+  <div id="stip">contacting CDN…</div>
+ </div>
+ <div id="smenu">
+  <div id="stitle">LAST LIGHT</div>
+  <div id="ssub">DEEP SPACE SURVIVAL SIMULATOR</div>
+  <button id="sgo" class="mbtn">NEW EXPEDITION</button>
+  <button id="scont" class="mbtn">CONTINUE</button>
+  <button id="snetb" class="mbtn">MULTIPLAYER</button>
+  <button id="ssetb" class="mbtn">SETTINGS</button>
+  <button id="sman" class="mbtn">FLIGHT MANUAL</button>
+  <button id="sexb" class="mbtn">EXIT</button>
+  <div id="slist"><b>CLICK THE 3D VIEW</b> TO TAKE CONTROLS — THE CURSOR LOCKS IN · <b>ESC</b> = PAUSE MENU (SAVE / LOAD / SETTINGS)<br><br>
+   MOVE <b>W A S D</b> · RUN <b>SHIFT</b> · JUMP <b>SPACE</b> · TOOLS <b>1-5</b> · USE TOOL <b>LMB</b> · <b>TAB</b> INVENTORY<br>
+   INTERACT: AIM AT A CONTROL (AMBER OUTLINE) → <b>CLICK</b> · TERMINALS: CLICK AN MFD or <b>M</b><br>
+   SEATED? <b>E</b> STANDS UP · <b>C</b> EXTERNAL CAM (DRAG+WHEEL)<br>
+   PILOT: <b>W/S</b> THROTTLE · <b>MOUSE</b> STICK · <b>A/D</b> ROLL · <b>X</b> CUT · HOLD+RELEASE <b>J</b> = HYPERSPEED<br>
+   <b>G</b> LANDING GEAR · <b>N</b> AUTO-ALIGN TO COURSE<br>
+   NAV <b>[M]</b> → <b>UNIVERSE</b> TAB: EVERYTHING CHARTED — 4 GALAXIES, 62 SYSTEMS, BLACK HOLES, WORMHOLES, VOYAGER 1<br>
+   SELECT ANYTHING → <b>TARGET</b> → FOLLOW THE HUD ARROW (N TURNS THE SHIP FOR YOU)<br>
+   WORMHOLES TELEPORT · BLACK HOLES PULL & CRUSH · NEBULAS BLIND SENSORS · RELICS WAIT IN THE DARK<br>
+   ROVER: <b>W A S D</b> DRIVE · <b>SPACE</b> BRAKE · <b>L</b> LIGHTS · <b>B</b> POWER · <b>E</b> EXIT<br>
+   BUILD <b>B</b> ON FOOT · DOCK <b>F</b> · STATION MENU <b>T</b> · HYPER JUMP: COURSE + HOLD <b>J</b><br>
+   BUILD: <b>B</b> BUILD MODE ON FOOT · LMB PLACE · <b>R</b> ROTATE · <b>X</b> DEMOLISH · SIGNS PERSIST FOREVER<br>
+   STATIONS: <b>F</b> DOCK (SLOW + CLOSE) · MARKET · SERVICES · MOTHERSHIPS · <b>T</b> REOPEN MENU<br>
+   TRUE HYPER JUMP: SET A SYSTEM COURSE [M] · HOLD <b>J</b> TO 80%+ · RELEASE = WARP ACROSS LIGHT-YEARS<br><br>
+   THE REACTOR DRINKS WATER DAILY — THE FOOD PRINTER CONDENSES FREE WATER, INJECT IT AT THE TANK.</div>
+  <div id="sset"></div>
+ </div>
+ <div id="slag">SINGLE SEAT · KL-9 "KESTREL" · UNREGISTERED<br>EVERY WORLD SPINS AT ITS OWN RATE · SYNTHESIZED AUDIO</div>
+ <div id="sstory">Every world spins at its own rate. Some days last hours. Some nights last weeks.<br>No one was listening. Tonight, they were found.</div>
+</div>
+<div id="sexit"><h1>POWERED DOWN</h1><div>KESTREL SYSTEMS OFFLINE — YOU CAN CLOSE THIS TAB</div><button class="mbtn" id="sreboot">REBOOT FLIGHT SYSTEMS</button></div>
+<div id="fatal"><h1>ENGINE FAULT</h1><div id="fmsg"></div><div style="color:#886;font-size:11px">F12 = CONSOLE · FIRST RUN NEEDS INTERNET (three.js CDN) · CHROME / EDGE / FIREFOX</div></div>
+<div id="hud">
+  <div id="xh"></div><div id="clk"></div><div id="obj"></div><div id="vit"></div><div id="fly"></div>
+  <div id="hb"></div><div id="warn"></div><div id="pr"></div><div id="hmark"></div>
+  <div id="gpshud"></div><div id="navarr">➤</div>
+  <div id="radio"></div><div id="voice"></div>
+  <div id="lkh">CLICK TO TAKE CONTROLS · ESC = MENU</div>
+</div>
+<div id="bld"></div>
+<div id="warp"><div class="wt">HYPER JUMP</div><div class="ws"></div></div>
+<div id="stick"><div id="stickp"></div></div>
+<div id="toast"></div>
+<div id="intr"></div><div id="iskip">SKIP ▸</div>
+<div id="term"><div id="tbar"><span id="ttitle">TERMINAL</span><span id="tx">X</span></div><div id="tbody"></div></div>
+<div id="fade"></div>
+<div id="netp"></div>
+<div id="death"><h1>VITAL SIGNS LOST</h1><div id="dcause"></div><button class="mbtn" id="dload">LOAD LAST SAVE</button><button class="mbtn" id="dnew">NEW EXPEDITION</button></div>
+<div id="winov"><h1>A NEW HOME</h1><div style="color:#cfe8d8;max-width:560px;font-size:14px;line-height:1.8">Proxima b hangs in the window — oceans, a breathable horizon, rain on the hull.<br>Humanity's last light has found somewhere to burn.</div><button class="mbtn" id="wcont">KEEP EXPLORING</button></div>
+<div id="pause"><div id="ppanel"><h1>PAUSED</h1>
+  <button class="mbtn" id="pres">▸ RESUME</button>
+  <button class="mbtn" id="psave">SAVE STATE</button>
+  <button class="mbtn" id="pload">LOAD STATE</button>
+  <button class="mbtn" id="psetb">SETTINGS</button>
+  <button class="mbtn" id="pctl">CONTROLS</button>
+  <button class="mbtn" id="pnet">MULTIPLAYER / CALLSIGN</button>
+  <button class="mbtn" id="pmenu">SAVE + MAIN MENU</button>
+  <div id="pset"></div>
+  <div id="plist"><b>CLICK THE VIEW</b> = TAKE CONTROLS (CURSOR LOCK) · <b>ESC</b> = RELEASE / THIS MENU<br>
+  MOVE <b>W A S D</b> · RUN <b>SHIFT</b> · JUMP <b>SPACE</b> · TOOLS <b>1-5</b> · <b>TAB</b> INVENTORY<br>
+  INTERACT: AIM AT A CONTROL (AMBER OUTLINE) → <b>CLICK</b> or <b>E</b> · TERMINALS: CLICK AN MFD or <b>M</b><br>
+  <b>G</b> LANDING GEAR · <b>N</b> AUTO-ALIGN · <b>C</b> EXTERNAL CAM · <b>X</b> CUT THROTTLE<br>
+  PILOT: <b>W/S</b> THROTTLE · <b>MOUSE</b> STICK · <b>A/D</b> ROLL · <b>J</b> HOLD+RELEASE = HYPERSPEED · <b>E</b> STAND UP<br>
+  ROVER: <b>W A S D</b> DRIVE · <b>SPACE</b> BRAKE · <b>L</b> LIGHTS · <b>B</b> POWER · <b>E</b> EXIT<br>
+  NAV <b>[M]</b> → UNIVERSE TAB SHOWS EVERYTHING · WORMHOLES TELEPORT · BLACK HOLES KILL · NEBULAS BLIND<br>
+  FOOD PRINTER CONDENSES FREE WATER + RATIONS · REACTOR TANK NEEDS DAILY INJECTIONS.</div>
+  <button class="mbtn danger" id="pnew" style="margin-top:6px">ABANDON SHIP — NEW GAME</button>
+</div></div>
+<script src="js/mp/00-mp-core.js"></script>
+<script src="js/mp/01-mp-voice.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

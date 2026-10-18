@@ -1,0 +1,14 @@
+{
+  "name": "last-light-mp",
+  "version": "1.0.0",
+  "description": "LAST LIGHT — deep space survival simulator with REAL multiplayer: Node.js relay server, shared persistent universe, proximity voice, base building, beacons, chat.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "node tools/build.js --standalone",
+    "test": "node server/selftest.js"
+  },
+  "engines": { "node": ">=16" },
+  "dependencies": { "ws": "^8.18.0" },
+  "license": "MIT"
+}
